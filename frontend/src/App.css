@@ -1,0 +1,14 @@
+.main {
+  margin: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: rgb(128, 0, 96);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.main li {
+  font-size: 25px;
+  line-height: 1.5em;
+  list-style: none;
+}

@@ -20,9 +20,7 @@ wsServer.on("connection", (ws) => {
   ws.on("message", (message) => {
     try {
       const parsedMsg = JSON.parse(message);
-      console.log(
-        `Received message: ${parsedMsg.type} - ${parsedMsg.content}`
-      );
+      console.log(`Received message: ${parsedMsg.type} - ${parsedMsg.content}`);
     } catch (e) {
       console.error("Error parsing message", e);
     }
