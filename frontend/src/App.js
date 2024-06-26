@@ -11,9 +11,9 @@ function App() {
       console.log("WebSocket Client Connected");
     };
 
-    socket.onmessage = (message) => {
+    socket.onmessage = (msg) => {
       try {
-        const parsedMessage = JSON.parse(message.data);
+        const parsedMessage = JSON.parse(msg.data);
         console.log("Received message", parsedMessage);
 
         if (parsedMessage.type === "notification") {
