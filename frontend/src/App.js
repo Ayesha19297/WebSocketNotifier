@@ -5,7 +5,7 @@ function App() {
   const [notifications, setNotifications] = useState([]);
 
   useEffect(() => {
-    const socket = new WebSocket("ws://localhost:8080");
+    const socket = new WebSocket("https://websocketnotifier.onrender.com");
 
     socket.onopen = () => {
       console.log("WebSocket Client Connected");
