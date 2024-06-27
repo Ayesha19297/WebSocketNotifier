@@ -42,6 +42,11 @@ app.get("/send-notification", (req, res) => {
   res.send("Notification sent!");
 });
 
-server.listen(8080, () => {
-  console.log("Server is active on port 8080");
+// server.listen(8080, () => {
+//   console.log("Server is active on port 8080");
+// });
+
+const port = process.env.PORT || 8080;
+server.listen(port, () => {
+  console.log(`Server is active on port ${port}`);
 });
